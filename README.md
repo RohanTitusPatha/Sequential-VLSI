@@ -10,6 +10,8 @@ A growing collection of **Verilog HDL sequential circuit implementations and tes
 |---|---|---|---|
 | Parameterized Counter | `counter.v` | `counter_tb.v` | Loadable counter with programmable count/repetition values |
 | Universal Shift Register | `unv_shift_reg.v` | `unv_shift_reg_tb.v` | Parameterized hold, shift-right, shift-left and parallel-load register |
+| Mealy FSM / Sequence Detector | `mealy.v` | `mealy_tb.v` | Mealy finite-state machine for serial sequence detection |
+| Two-Request FSM Arbiter | `arbiter.v` | `arbiter_tb.v` | FSM-based arbiter that grants access between two requests |
 
 ## Parameterized Counter
 
@@ -32,11 +34,16 @@ The universal shift register is parameterized using `N` and supports four modes:
 | `10` | Shift left |
 | `11` | Parallel load |
 
+## Finite State Machines
+
+The repository also includes a Mealy sequence detector and a two-request FSM arbiter, along with testbenches for simulation.
+
 ## Technologies
 
 - Verilog HDL
 - RTL Design
 - Sequential Logic
+- Finite State Machines
 - Parameterized Hardware
 - Testbench Development
 - Functional Simulation
